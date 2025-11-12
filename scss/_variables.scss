@@ -1,0 +1,50 @@
+:root {
+  --font-display: "Playfair Display", "Marcellus", "Georgia", serif;
+  --font-body: "Manrope", "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-leaf-950: #041209;
+  --color-leaf-900: #0b1c11;
+  --color-leaf-700: #154428;
+  --color-leaf-500: #1e7c45;
+  --color-leaf-300: #6fb17e;
+  --color-leaf-200: #b7d8bd;
+  --color-leaf-100: #dfeee3;
+  --color-earth-700: #4c3721;
+  --color-earth-500: #8c5a2f;
+  --color-earth-300: #c9986a;
+  --color-sky-200: #c7e6f5;
+  --color-sky-400: #8fc6e5;
+  --color-stone-900: #1f241f;
+  --color-stone-700: #444c45;
+  --color-stone-400: #7d857d;
+  --color-stone-200: #cfd3cd;
+  --color-stone-100: #f4f6f2;
+  --color-accent: #f1a208;
+  --color-accent-dark: #d68000;
+
+  --bg-body: var(--color-stone-100);
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #f8fbf6;
+  --text-primary: var(--color-leaf-900);
+  --text-secondary: var(--color-stone-700);
+  --text-muted: var(--color-stone-400);
+  --border-soft: rgba(15, 40, 24, 0.08);
+  --border-strong: rgba(15, 40, 24, 0.18);
+
+  --shadow-soft: 0 28px 80px -45px rgba(6, 37, 12, 0.65);
+  --shadow-card: 0 18px 40px -30px rgba(8, 44, 20, 0.4);
+  --shadow-card-strong: 0 30px 60px -30px rgba(8, 44, 20, 0.55);
+
+  --radius-xl: 36px;
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+
+  --container-max: 1200px;
+  --container-padding: clamp(1rem, 4vw, 2.8rem);
+  --section-gap: clamp(3rem, 8vw, 6rem);
+  --grid-gap: clamp(1.5rem, 4vw, 3rem);
+  --nav-height: 4.25rem;
+
+  --transition-base: 200ms ease;
+}

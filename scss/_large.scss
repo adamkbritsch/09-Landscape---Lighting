@@ -1,0 +1,32 @@
+@media (min-width: 1200px) {
+  .site-header__inner {
+    padding-block: 0.5rem;
+  }
+
+  .site-header .container {
+    padding-inline: 1rem;
+  }
+
+  .menu-item__link {
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .hero__text {
+    padding: 3rem;
+  }
+
+  .hero__slider {
+    min-height: 28rem;
+  }
+
+  .card-grid--balanced {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-card--png {
+    min-height: 22rem;
+  }
+}

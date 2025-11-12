@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verdant Glow Landscape & Lighting</title>
+    <meta name="description" content="Starter file for a responsive landscape and lighting studio site with structure ready for DWDD 2610 requirements.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header" id="top">
+        <div class="container site-header__inner">
+            <a class="brand" href="#hero">
+                <img class="brand__mark" src="images/logo1x.png" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x" alt="Verdant Glow Landscape and Lighting logo">
+                <span class="brand__text">
+                    <span class="brand__title">Verdant Glow</span>
+                    <span class="brand__subtitle">Landscape &amp; Lighting Studio</span>
+                </span>
+            </a>
+            <div class="header__cta">
+                <a class="header__phone" href="tel:+18005551234">Call 800&bull;555&bull;1234</a>
+                <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+            </div>
+            <nav class="site-nav" id="primary-nav" aria-label="Primary">
+                <ul class="main-menu" id="theNav">
+                    <li class="menu-item is-active" data-wayfinding-anchor="#hero">
+                        <a class="menu-item__link" href="#hero" aria-current="page">Home</a>
+                    </li>
+                    <li class="menu-item menu-item--parent parent" data-wayfinding-anchor="#services">
+                        <a class="menu-item__link" href="#services" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-services">
+                            Services
+                        </a>
+                        <ul class="sub-menu" id="submenu-services" aria-label="Landscape service menu">
+                            <li><a href="#lighting">Lighting Design</a></li>
+                            <li><a href="#enhancements">Seasonal Enhancements</a></li>
+                            <li><a href="#testimonials">Client Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item--parent parent" data-wayfinding-anchor="#team">
+                        <a class="menu-item__link" href="#team" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-team">
+                            Our Team
+                        </a>
+                        <ul class="sub-menu" id="submenu-team" aria-label="Verdant Glow team menu">
+                            <li><a href="#team">Landscape Architects</a></li>
+                            <li><a href="#team">Lighting Designers</a></li>
+                            <li><a href="#team">Project Managers</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item" data-wayfinding-anchor="#stories">
+                        <a class="menu-item__link" href="#stories">Design Stories</a>
+                    </li>
+                    <li class="menu-item" data-wayfinding-anchor="#process">
+                        <a class="menu-item__link" href="#process">Process</a>
+                    </li>
+                    <li class="menu-item" data-wayfinding-anchor="#contact">
+                        <a class="menu-item__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero hero--full section" id="hero" data-wayfinding-target="hero">
+            <div class="container hero__grid" data-hero-layout="split">
+                <div class="hero__media">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="images/hero-pathway.webp">
+                                    <source media="(min-width: 640px)" srcset="images/hero-pathway.webp">
+                                    <img src="images/hero-pathway.webp" alt="Pathway lighting installation">
+                                </picture>
+                                <div class="hero-slide__overlay">
+                                    <p class="eyebrow hero-slide__label">Path lighting</p>
+                                    <h3>Guide arrivals safely</h3>
+                                    <span>Custom lumen plans + transformer schedules</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="images/hero-evergreen.webp">
+                                    <source media="(min-width: 640px)" srcset="images/hero-evergreen.webp">
+                                    <img src="images/hero-evergreen.webp" alt="Evergreen uplighting vignette">
+                                </picture>
+                                <div class="hero-slide__overlay">
+                                    <p class="eyebrow hero-slide__label">Evergreen glow</p>
+                                    <h3>Celebrate legacy trees</h3>
+                                    <span>Moonlighting scenes with zero glare</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="images/hero-entertaining.webp">
+                                    <source media="(min-width: 640px)" srcset="images/hero-entertaining.webp">
+                                    <img src="images/hero-entertaining.webp" alt="Entertaining-ready patio scene">
+                                </picture>
+                                <div class="hero-slide__overlay">
+                                    <p class="eyebrow hero-slide__label">Patio entertaining</p>
+                                    <h3>Set the scene for every gathering</h3>
+                                    <span>Dimmable presets for dining &amp; dancing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="hero__text">
+                    <p class="eyebrow">Landscape &amp; lighting studio</p>
+                    <h1>Illuminate every outdoor moment</h1>
+                    <p class="lede">Verdant Glow designs, installs, and maintains custom landscape lighting so every path, patio, and planting looks purposeful long after sunset.</p>
+                    <div class="btn-group">
+                        <a class="btn btn--primary" href="#contact">Book design call</a>
+                        <a class="btn btn--ghost" href="#stories">Preview case studies</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section section--compact" id="services" data-wayfinding-target="services">
+            <div class="container">
+                <div class="section__heading">
+                    <p class="eyebrow">Services overview</p>
+                    <h2>Outdoor services built for every property</h2>
+                    <p class="lede">From low-voltage lighting plans to seasonal planting refreshes, our team handles the strategy, detailing, and care that keep landscapes welcoming year-round.</p>
+                </div>
+            </div>
+            <div class="container" id="lighting" data-wayfinding-target="lighting">
+                <div class="service-showcase">
+                    <article class="service-feature">
+                        <figure>
+                            <img src="images/hero-pathway.webp" alt="Low-voltage lighting plans demo" loading="lazy">
+                            <div class="service-feature__svg">
+                                <svg viewBox="0 0 600 80" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                                    <path d="M0,50 C150,10 300,90 450,40 C525,15 560,35 600,5 L600,80 L0,80 Z" fill="url(#serviceWaveOne)"/>
+                                    <defs>
+                                        <linearGradient id="serviceWaveOne" x1="0" y1="0" x2="1" y2="1">
+                                            <stop offset="0%" stop-color="#6fb17e"/>
+                                            <stop offset="100%" stop-color="#c7e6f5"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </figure>
+                        <div class="service-feature__body">
+                            <p class="eyebrow">Lighting plans</p>
+                            <h3>Low-voltage lighting plans</h3>
+                            <p>Pair accent, path, and wash fixtures to guide guests safely through every outdoor room.</p>
+                            <ul>
+                                <li>Photometrics + transformer schedules</li>
+                                <li>Fixture callouts with finish palettes</li>
+                                <li>On-site aiming + final tuning</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="service-feature">
+                        <figure>
+                            <img src="images/hero-entertaining.webp" alt="Seasonal color rotations" loading="lazy">
+                            <div class="service-feature__svg">
+                                <svg viewBox="0 0 600 80" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                                    <path d="M0,20 C120,70 260,0 400,55 C500,95 560,70 600,40 L600,80 L0,80 Z" fill="url(#serviceWaveTwo)"/>
+                                    <defs>
+                                        <linearGradient id="serviceWaveTwo" x1="0" y1="1" x2="1" y2="0">
+                                            <stop offset="0%" stop-color="#8fc6e5"/>
+                                            <stop offset="100%" stop-color="#1e7c45"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </figure>
+                        <div class="service-feature__body">
+                            <p class="eyebrow">Seasonal color</p>
+                            <h3>Seasonal color rotations</h3>
+                            <p>Refresh beds and containers with pollinator-friendly plantings matched to your lighting scenes.</p>
+                            <ul>
+                                <li>Quarterly color palettes</li>
+                                <li>Native, low-water recommendations</li>
+                                <li>Event-specific styling</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="container" id="enhancements" data-wayfinding-target="enhancements">
+                <div class="service-showcase">
+                    <article class="service-feature service-feature--png">
+                        <figure>
+                            <img src="images/hero-evergreen.webp" alt="Canopy glow packages" loading="lazy">
+                            <img class="service-feature__png" src="images/edge-canopy.png" alt="" aria-hidden="true" loading="lazy">
+                        </figure>
+                        <div class="service-feature__body">
+                            <p class="eyebrow">Evergreen focus</p>
+                            <h3>Canopy glow packages</h3>
+                            <p>Layer moonlighting and grazing techniques to highlight legacy trees without glare.</p>
+                            <ul>
+                                <li>Custom hex-cut metal shrouds</li>
+                                <li>Smart dimming scenes per season</li>
+                                <li>Wildlife-conscious mounting</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="service-feature service-feature--png">
+                        <figure>
+                            <img src="images/hero-pathway.webp" alt="Meadow fringe installs" loading="lazy">
+                            <img class="service-feature__png" src="images/edge-horizon.png" alt="" aria-hidden="true" loading="lazy">
+                        </figure>
+                        <div class="service-feature__body">
+                            <p class="eyebrow">Meadow fringe</p>
+                            <h3>Meadow fringe installs</h3>
+                            <p>Introduce native grasses along pathways for movement, contrast, and low-maintenance texture.</p>
+                            <ul>
+                                <li>Site prep + soil amendments</li>
+                                <li>Drip irrigation add-ons</li>
+                                <li>Maintenance coaching</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="stories" data-wayfinding-target="stories">
+            <div class="container">
+                <div class="section__heading">
+                    <p class="eyebrow">Design stories</p>
+                    <h2>How we plan contrast, hierarchy, and alignment</h2>
+                    <p class="lede">Every project receives a documented story for plant palettes, lighting levels, and circulation so homeowners know exactly why each choice matters.</p>
+                </div>
+                <div class="insight-grid">
+                    <article class="insight-card">
+                        <h3>Contrast mapping</h3>
+                        <p>Layer primary focal points at 35–40 lumens and support them with 15–20 lumen fills so paths stay legible without overpowering the planting beds.</p>
+                    </article>
+                    <article class="insight-card">
+                        <h3>Wayfinding cues</h3>
+                        <p>Group path lights in pairs, align them with existing hardscape joints, and aim bollards away from neighboring windows to eliminate glare.</p>
+                    </article>
+                    <article class="insight-card">
+                        <h3>Visual tangents</h3>
+                        <p>We review every sightline at seated and standing heights to prevent fixtures, tree canopies, and architectural features from merging unintentionally.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="testimonials" data-wayfinding-target="testimonials">
+            <div class="container section__heading">
+                <p class="eyebrow">Testimonials</p>
+                <h2>Trusted by Front Range homeowners</h2>
+            </div>
+            <div class="container testimonial-grid">
+                <article class="testimonial-card">
+                    <img class="masked-photo masked-photo--burst" src="images/mask-burst-photo.webp" alt="Client smiling outdoors" loading="lazy">
+                    <p class="testimonial__quote">“Verdant Glow transformed our evening gatherings—every path feels safe, and the party never ends when the sun goes down.”</p>
+                    <p class="testimonial__person">— Naomi &amp; Julian • Farmington</p>
+                </article>
+                <article class="testimonial-card">
+                    <img class="masked-photo masked-photo--petals" src="images/mask-petals-photo.webp" alt="Client laughing in the garden" loading="lazy">
+                    <p class="testimonial__quote">“We asked for warm, photo-ready lighting for our patio. The team delivered a scene that feels like a vacation every night.”</p>
+                    <p class="testimonial__person">— The Castillo Family • Holladay</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="team" data-wayfinding-target="team">
+            <div class="container">
+                <div class="section__heading">
+                    <p class="eyebrow">Our team</p>
+                    <h2>Spotlight landscape + lighting experts</h2>
+                    <p class="lede">Introduce the smiling faces behind your service plans, moonlighting installs, and seasonal refreshes.</p>
+                </div>
+                <div class="team-grid">
+                    <article class="team-card">
+                        <img class="masked-photo masked-photo--hex" src="images/mask-hex-photo.webp" alt="Lead lighting designer" loading="lazy">
+                        <div>
+                            <h3>Avery Holt</h3>
+                            <p>Lighting Design Lead</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <img class="masked-photo masked-photo--pitch" src="images/mask-pitch-photo.webp" alt="Project manager smiling" loading="lazy">
+                        <div>
+                            <h3>Micah Tran</h3>
+                            <p>Project Manager</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="process" data-wayfinding-target="process">
+            <div class="container">
+                <div class="section__heading">
+                    <p class="eyebrow">Process framework</p>
+                    <h2>How we move from sketch to glow</h2>
+                </div>
+                <ol>
+                    <li><strong>Discovery.</strong> Walk the property, study utilities, and document how the space is used after dark.</li>
+                    <li><strong>Design.</strong> Deliver lighting levels, planting palettes, and wayfinding diagrams for each zone.</li>
+                    <li><strong>Install &amp; care.</strong> Coordinate trades, aim fixtures, and maintain lamps and plantings seasonally.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section" id="contact" data-wayfinding-target="contact">
+            <div class="container">
+                <div class="section__heading">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Plan your consultation</h2>
+                    <p class="lede">Tell us about your property, preferred install timeframe, and any HOA or builder requirements—we’ll reply with a proposed site visit.</p>
+                </div>
+                <div class="card-grid">
+                    <article class="service-card">
+                        <h3>Studio</h3>
+                        <p>Open Mon–Thu • 9 a.m.–6 p.m.<br>Serving the Wasatch Front</p>
+                        <p><strong>Email</strong> hello@verdantglow.com<br><strong>Phone</strong> <a href="tel:+18005551234">800&nbsp;555&nbsp;1234</a></p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Next steps</h3>
+                        <ul>
+                            <li>Schedule on-site lighting audit</li>
+                            <li>Receive design proposal &amp; budget</li>
+                            <li>Approve install timeline</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Adam Britsch &bull; Verdant Glow Landscape &amp; Lighting</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="js/script-start.js"></script>
+</body>
+</html>
