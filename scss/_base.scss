@@ -19,6 +19,7 @@ body {
     radial-gradient(circle at 80% 0%, rgba(143, 198, 229, 0.25), transparent 50%),
     var(--bg-body);
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 img,

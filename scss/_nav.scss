@@ -25,7 +25,6 @@
 .brand__mark {
   width: 40px;
   height: 40px;
-  height: auto;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
 }
@@ -63,6 +62,14 @@
   background: transparent;
   border: none;
   padding: 0;
+  width: 3.25rem;
+  height: 3.25rem;
+  min-width: 3.25rem;
+  min-height: 3.25rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #primary-nav {
